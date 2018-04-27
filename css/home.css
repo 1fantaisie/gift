@@ -1,0 +1,87 @@
+
+#welcome{
+	
+	color:white;
+	text-align: right;
+	font-size: 125px;
+	font-weight: 100;
+
+}
+p{
+	color:white;
+	text-align: right;
+	font-size: 18px;
+	text-indent: 3px;
+	margin-left: 50px;
+}
+#login{
+	background-image: url('../photos/black-26-trans.png');
+	float:left;
+	width:270px;
+	height:140px;
+	font-size: 12px;
+	font-family: Verdana;
+	color:white;
+	margin:15px;
+	margin-left: 0px;
+	padding: 25px;
+
+}
+
+.form{
+	height:26px;
+	width:240px;
+	margin-bottom: 3px;
+}
+
+#submit_button{
+	position: relative;
+	border:0;
+	left:137px;
+	color: white;
+	width: 100px;
+	padding: 4px;
+	background-color: #6DEDED;
+	border-color: #6DEDED;
+	font-weight: 400;
+	font-size: 15px;
+
+}
+
+#search {
+	background-image: url('../photos/white.png');
+	float:right;
+	width:270px;
+	height:140px;
+	font-size: 12px;
+	font-family: Verdana;
+	color:black;
+	margin:15px;
+	margin-right: 0px;
+	padding: 25px;
+}
+#search_submit {
+	position: relative;
+	border:0;
+	left:137px;
+	width: 100px;
+	padding: 4px;
+	background-color: rgb(243,123,123);
+	border-color: rgb(243,123,123);
+	font-size: 15px;
+}
+#search_body {
+	position: relative;
+	top:25px;
+}
+#date{
+	width:250px;
+	float:left;
+	color: white;
+	font-size: 46px;
+	margin-left:28px;
+	margin-top: 50px;
+}
+#date2{
+	margin-left: 60px;
+}

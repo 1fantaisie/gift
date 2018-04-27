@@ -1,0 +1,54 @@
+
+
+#title{
+	position: relative;
+	left:100px;
+}
+.title{
+	font-size: 42px;
+	color:white;
+	font-weight: 100;	
+}
+
+#add_body{
+	font-size: 11px;
+	font-family: 'Open Sans', sans-serif;
+	background-image: url('../photos/black.png');
+	width:450px;
+	position: relative;
+	left:60px;
+	padding: 25px;
+	height: 315px;
+	color: white;
+}
+#left_add {
+	float:left;
+	width:250px;
+	height: 315px;
+}
+#right_add{
+	width:140px;
+	height: 315px;
+	float:right;
+	padding-right: 30px;
+	
+	
+}
+#submit {
+	position: absolute;
+	 bottom: 25px; 
+}
+#submit_button{
+	color: white;
+	width: 120px;
+	padding: 4px;
+	background-color: rgb(85,203,219);
+	border-color: rgb(85,203,219);
+	font-weight: 600;
+}
+
+input[type=text]{
+	height:26px;
+	width:240px;
+	margin-bottom: 3px;
+}

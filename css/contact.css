@@ -1,0 +1,53 @@
+#form{
+	font-family: 'Open Sans', sans-serif;
+	padding: 30px;
+	padding-bottom: 14px;
+	margin: 50px;
+	background-image: url('../photos/black-26-trans.png');
+	color: white;
+	width: 400px;
+	font-size: 14px;
+	float:left;
+}
+#tarea{
+	width:340px;
+	height:80px;
+}
+.submit_button{
+	margin:0;
+	margin-top: 15px;
+	border:0;
+	color: white;
+	width: 120px;
+	padding: 4px;
+	background-color: rgb(85,203,219);
+	border-color: rgb(85,203,219);
+	font-weight: 600;
+}
+
+#cod {
+	background-image: url('../photos/white.png');
+	float:right;
+	margin-right: 30px;
+	margin-top: 50px;
+	width:250px;
+	height:140px;
+	font-size: 12px;
+	font-family: Verdana;
+	color:black;
+	padding: 25px;
+}
+#search_submit {
+	border: 0;
+	position: relative;
+	left:137px;
+	width: 100px;
+	padding: 4px;
+	background-color: rgb(243,123,123);
+	border-color: rgb(243,123,123);
+	font-size: 15px;
+}
+input[type=text]{
+	width: 240px;
+	height:26px;
+}

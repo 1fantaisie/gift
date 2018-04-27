@@ -1,0 +1,196 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.6
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Sep 02, 2013 at 05:41 PM
+-- Server version: 5.0.51
+-- PHP Version: 5.2.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `nunta`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ci_sessions`
+--
+
+CREATE TABLE `ci_sessions` (
+  `session_id` varchar(40) NOT NULL default '0',
+  `ip_address` varchar(16) NOT NULL default '0',
+  `user_agent` varchar(255) NOT NULL,
+  `last_activity` int(10) unsigned NOT NULL default '0',
+  `user_data` text NOT NULL,
+  PRIMARY KEY  (`session_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ci_sessions`
+--
+
+INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
+('9220af3e11d7972d8c840a0eb7010d38', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36', 1373041313, 'a:9:{s:9:"user_data";s:0:"";s:2:"id";s:1:"6";s:8:"username";s:6:"123456";s:5:"email";s:11:"aaa@aaa.com";s:8:"group_id";s:1:"1";s:5:"token";s:0:"";s:10:"identifier";s:0:"";s:9:"logged_in";b:1;s:8:"currentW";s:2:"57";}'),
+('80c61e2c0b2811beb89c3c17113b593d', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36', 1373041253, ''),
+('cd1499070d50d6dc5f7841bd277849fd', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36', 1373041253, ''),
+('288cd69acd62f0511a1e2f3fb5dd8034', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36', 1371223203, 'a:7:{s:2:"id";s:1:"6";s:8:"username";s:6:"123456";s:5:"email";s:11:"aaa@aaa.com";s:8:"group_id";s:1:"1";s:5:"token";s:0:"";s:10:"identifier";s:0:"";s:9:"logged_in";b:1;}'),
+('146e0606b4fedba60a70baf483a57623', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36', 1371358162, ''),
+('795db074aa32d38e5a0c2f4716509765', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36', 1371369581, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cod`
+--
+
+CREATE TABLE `cod` (
+  `id` int(11) NOT NULL auto_increment,
+  `weddingId` int(11) NOT NULL,
+  `cod` varchar(20) NOT NULL,
+  `valid` int(11) NOT NULL default '1',
+  `choosen_gift` varchar(50) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `cod`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gift`
+--
+
+CREATE TABLE `gift` (
+  `id` int(11) NOT NULL auto_increment,
+  `weddingId` int(11) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `valid` int(11) NOT NULL default '1',
+  `description` varchar(500) default NULL,
+  `photo` varchar(100) default NULL,
+  `link` varchar(200) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=72 ;
+
+--
+-- Dumping data for table `gift`
+--
+
+INSERT INTO `gift` (`id`, `weddingId`, `title`, `valid`, `description`, `photo`, `link`) VALUES
+(63, 57, '', 1, '', '../uploads/default_gift.jpg', ''),
+(46, 51, '', 1, '', '../uploads/default_gift.jpg', ''),
+(39, 54, 'anime', 0, 'Anime online subtitrate in limba romana.', '../uploads/default_gift.jpg', 'http://animero.p.ht'),
+(65, 57, 'text', 1, '', '../uploads/default_gift.jpg', ' '),
+(64, 57, '', 1, '', '../uploads/default_gift.jpg', ''),
+(66, 57, '', 1, '', '../uploads/default_gift.jpg', ' '),
+(67, 57, '', 1, '', '../uploads/default_gift.jpg', ''),
+(68, 57, '', 1, '', '../uploads/default_gift.jpg', ''),
+(69, 57, 'asdasdasd', 1, '', '../uploads/default_gift.jpg', ''),
+(70, 57, 'spam', 1, '', '../uploads/default_gift.jpg', ''),
+(71, 57, 'dasdasdasdasdas', 1, '', '../uploads/default_gift.jpg', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `groups`
+--
+
+CREATE TABLE `groups` (
+  `id` int(11) NOT NULL,
+  `title` varchar(20) NOT NULL default '',
+  `description` varchar(100) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `groups`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `id`
+--
+
+CREATE TABLE `id` (
+  `id` int(11) NOT NULL auto_increment,
+  `weddingId` int(11) NOT NULL,
+  `uid` varchar(35) NOT NULL,
+  `choseen_gift_id` int(11) NOT NULL,
+  `cod` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `id`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `group_id` int(11) NOT NULL default '100',
+  `token` varchar(255) NOT NULL,
+  `identifier` varchar(255) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `group_id`, `token`, `identifier`) VALUES
+(7, 'Adi Dance', 'adi_dany@yahoo.com', '0cc9fd5b7d2c442ba3ec060aefeab5018ac264cec3ff3abc8fa11ad8ea5e797d', 1, '', ''),
+(5, 'EmmaDance', 'emanuella_dance@yahoo.com', '0cc9fd5b7d2c442ba3ec060aefeab5018ac264cec3ff3abc8fa11ad8ea5e797d', 100, '', ''),
+(6, '123456', 'aaa@aaa.com', '0cc9fd5b7d2c442ba3ec060aefeab5018ac264cec3ff3abc8fa11ad8ea5e797d', 1, '', ''),
+(8, 'Dance Andreea', 'lidia.coco@yahoo.com', '6a769ee4563807a42f76238782f0eaff222962a7ea51da7ef188fde9071019d8', 100, '', ''),
+(9, 'floryn', 'floryn_andrey11@yahoo.com', 'a0177f2ef40fe593cdaef9a8a54486687acd0c93e31e3a9a21cb8197826720e5', 100, '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `weddings`
+--
+
+CREATE TABLE `weddings` (
+  `id` int(11) NOT NULL auto_increment,
+  `userId` int(11) NOT NULL,
+  `cod` varchar(14) NOT NULL,
+  `locatia` varchar(50) NOT NULL,
+  `prenumeB` varchar(30) NOT NULL,
+  `prenumeF` varchar(30) NOT NULL,
+  `photo` varchar(100) default NULL,
+  `pcolor` varchar(20) NOT NULL,
+  `scolor` varchar(20) NOT NULL,
+  `date` varchar(20) NOT NULL,
+  `day` int(11) NOT NULL,
+  `month` int(11) NOT NULL,
+  `year` int(11) NOT NULL,
+  `week_day` varchar(20) NOT NULL,
+  `month_name` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=59 ;
+
+--
+-- Dumping data for table `weddings`
+--
+
+INSERT INTO `weddings` (`id`, `userId`, `cod`, `locatia`, `prenumeB`, `prenumeF`, `photo`, `pcolor`, `scolor`, `date`, `day`, `month`, `year`, `week_day`, `month_name`) VALUES
+(54, 9, '2SXP3GkcFD', 'Bihor', 'Vladimir', 'Cipriana', '../uploads/default.jpg', '66FF19', 'FF2BF1', '06/14/2013', 14, 6, 2013, 'vineri', 'iunie'),
+(55, 9, 'vHwVpRFWlu', 'acolo', 'domnul', 'doamna', '../uploads/default.jpg', 'FF122A', 'EFFF0A', '05/10/2013', 10, 5, 2013, 'vineri', 'mai'),
+(57, 6, '35A5V0Mogc', 'sadasd', '', 'asdasd', '../uploads/organizator.jpg', 'FFFFFF', '3895FF', '05/04/2013   ', 4, 5, 2013, 'sambata', 'mai'),
+(58, 6, 'KXP525yZn6', 'ddd', 'test', 'test', '../uploads/procesor1.JPG', '36F2FF', 'FFFFFF', '06/18/2013', 18, 6, 2013, 'marti', 'iunie');

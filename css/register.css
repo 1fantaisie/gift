@@ -1,0 +1,26 @@
+.box{
+	background-image: url('../photos/black-26-trans.png');
+	width:400px;
+	padding: 30px;
+	margin-left: 50px;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+.form{
+	width: 240px;
+	height:26px;
+}
+.submit_button{
+	margin:0;
+	border:0;
+	color: white;
+	width: 120px;
+	padding: 4px;
+	background-color: rgb(85,203,219);
+	border-color: rgb(85,203,219);
+	font-weight: 600;
+}
+.submit_button:hover{
+	background-color: rgb(105,223,229);
+}

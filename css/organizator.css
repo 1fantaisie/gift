@@ -1,0 +1,325 @@
+
+#page_title{
+	font-family: 'Open Sans', sans-serif;
+	float:left;
+	color: white;
+	font-size: 40px;
+	margin: 38px;
+	margin-bottom: 0px;
+	font-weight: 200;
+	display:inline; 
+	}
+.add_link{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+}
+.add{
+	font-family: 'Open Sans', sans-serif;
+	float:right;
+	text-align: center;
+	background-color: rgb(85,203,219);
+	width: 150px;
+	padding:6px;
+	margin-right:28px ;
+	margin-top: 47px;
+	
+}
+#date{
+	font-family: 'Open Sans', sans-serif;
+	float:right;
+	text-align: center;
+	font-size: 40px;
+	color:white;
+	margin:38px;
+	margin-bottom: 0px;
+}
+#date2{
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 35px;
+}
+#clear{
+	
+}
+.wedding_body{
+	font-family: 'Open Sans', sans-serif;
+	margin: 30px;
+	margin-top: 0px;
+	width:640px;
+	height:105px;
+	color:white;
+ 	
+
+}
+.wedding_color_left{
+	height:105px;
+	width:20px;
+	float:left;
+	margin: 0;
+}
+.wedding_color_right{
+	height:105px;
+	float:right;
+	width:620px;
+	margin:0px;
+}
+.photo{
+	float:left;
+	margin-top: -8px;
+	margin-left: 0px;
+	margin-right:27px;
+}
+.center{
+	font-family: 'Open Sans', sans-serif;
+	margin-left:5px;
+	float:left;
+	text-align: right;
+}
+a.name{
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	top:0px;
+	text-decoration: none;
+	color: white;
+	font-size: 28px;
+}
+.loc{
+ 	position:relative;
+ 	top: 22px;
+ 	text-align: left;
+}
+.right{
+	font-family: 'Open Sans', sans-serif;
+	padding: 3px;
+	margin:3px;
+	text-align: center;
+	float:right;
+	width: 90px;
+}
+.day{
+	position: relative;
+	top: 0px;
+	font-size: 32px;
+}
+.month{
+	position: relative;
+	top: 0px;
+
+}
+.year{
+	position: relative;
+	top: 0px;
+
+}
+
+
+#spage_title{
+	float:left;
+	color: white;
+	font-size: 40px;
+	margin: 38px;
+	margin-bottom: 25px;
+	font-weight: 200;
+	
+	}
+#selected_wedding{
+		font-family: 'Open Sans', sans-serif;
+	color:white;
+	float:right;
+	width:180px;
+	margin-right: 4px;
+	margin-left: 12px;
+	margin-top:47px;
+	padding-left: 19px;
+	padding-right: 19px;
+	font-weight: 300;
+	height:75%;
+	background-image: url('../photos/black-26-trans.png');
+}
+#wedding_photo{
+	margin-top:-40px;
+
+}
+#wedding_title{
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:18px;
+}
+#s_date{
+	font-size: 14px;
+	float:left;
+}
+#s_day{
+	margin-left: 34px;
+	font-size: 13px;
+}
+.location_p{
+	float:left;
+	margin-right: 3px;
+}
+.calendar_p{
+	float:left;
+	margin-right: 3px;
+}
+#total_gifts{
+	margin-bottom: 12px;
+	margin-top: 10px;
+}
+.wedding_buttons{
+	font-family: 'Open Sans', sans-serif;
+	float:right;
+	text-align: center;
+	background-color: rgb(85,203,219);
+	width: 100%;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin: 0 auto;
+	margin-top: 7px;
+	font-size: 15px;
+	
+	
+}
+#wedding_submit{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	background-color: rgb(85,203,219);
+	border:0;
+	width:100% ;
+	color:white;
+	margin:0 auto;
+	margin-top: 7px;
+	margin-bottom: 0px;
+	padding-top:3px;
+	padding-bottom:3px;
+	font-size: 15px;
+}
+.gift{
+	margin-left: 10px;
+	margin-right: 27px;
+	width:205px;
+	height:226px;
+	float:left;
+	margin-bottom: 35px;
+	background-image: url('../photos/black-26-trans.png');
+}
+.gift_photo{
+	margin-top: -18px;
+	margin-left: 9px;	
+	float:left;
+}
+.gift_center{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	float:left;
+	color: white;
+	margin-left: 14px;
+	padding-bottom: 3px;
+}
+.edit_gift_div:hover{
+	background-color:  rgb(85,203,219);
+}
+.edit_gift_div{
+	text-align: center;
+	width:46px;
+	height:30px;
+	float:right;
+}
+.edit_gift{
+	margin :0 auto;
+	margin-bottom: 2px;
+		border:0;
+	}
+.trash_div:hover{
+	background-color:  rgb(85,203,219);
+}
+.trash_div{
+	text-align: center;
+	width:46px;
+	height:30px;
+	float:right;
+}
+.trash{
+	margin :0 auto;
+	border:0;
+	margin-top: 1px;
+	margin:0 auto:;
+	text-align: center;
+}
+.chosen_gift{
+	position: relative;
+	top: 70%;
+	width: 100%;
+	height: 14px;
+	background-color: rgb(243,123,123);
+}
+.unchosen_gift{
+	position: relative;
+	top: 70%;
+	width: 100%;
+	height: 14px;
+    
+    background-color:  rgb(85,203,219);
+}
+#upperspace{
+	float: left;
+	width:560px;
+	height:60px;
+}
+.chosen_gift2{
+	position: relative;
+	top: 100%;
+	width: 100%;
+	height: 14px;
+	background-color: rgb(243,123,123);
+}
+.unchosen_gift2{
+	position: relative;
+	top: 100%;
+	width: 100%;
+	height: 14px;
+    background-color:  rgb(85,203,219);
+}
+.select_div{
+	text-align: center;
+	width:46px;
+	height:60px;
+	float:right;
+	margin-top: 20px;
+}
+.select{
+	margin :0 auto;
+	margin-top: 15px;
+		border:0;
+	background-image:url(''../../photos/select.png''); 	
+	}
+#chosen{
+	background-image: url('../photos/black-26-trans.png');
+	float:left;
+	width:600px;
+	height:120px;
+	margin-top: 55px;
+	margin-bottom: 30px;
+}
+.cgift_photo{
+	margin-top: -15px;
+	float:left;
+}
+#add{
+	margin-right: 16px;
+	margin-top: 65px;
+	font-family: 'Open Sans', sans-serif;
+	float:right;
+	text-align: center;
+	background-color: rgb(85,203,219);
+	width: 150px;
+	padding:6px;
+	color: white;
+	border:0;
+}
+#center{
+	float:left;
+	margin-left: 15px;
+	color:white;
+}
